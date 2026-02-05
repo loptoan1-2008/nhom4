@@ -1,0 +1,974 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mùa Xuân Việt Nam — Báo tường số (5PK)</title>
+  <meta name="description" content="Báo tường số về Mùa Xuân Việt Nam, trọng tâm Tết Nguyên Đán. Nhóm 5PK." />
+
+  <!-- Font Việt ổn định (có fallback nếu không tải được) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Lớp hoa rơi -->
+  <div id="petal-layer" aria-hidden="true"></div>
+
+  <!-- 1) TIÊU ĐỀ TRANG WEB (nổi bật + trang trí) -->
+  <header class="site-header" id="top" aria-label="Tiêu đề trang web">
+    <div class="container header-inner">
+      <div class="header-badge">
+        <span class="badge-dot" aria-hidden="true"></span>
+        <span class="badge-text">BÁO TƯỜNG SỐ • NHÓM 5PK</span>
+      </div>
+
+      <h1 class="site-title">MÙA XUÂN VIỆT NAM</h1>
+
+      <p class="site-hello">
+        <strong>Lời ngỏ:</strong> Xuân về — vàng nắng trước hiên. Chúc ta bước qua năm mới bằng bình an,
+        biết ơn, và một chút dịu dàng dành cho nhau.
+      </p>
+
+      <!-- “Cây” mai/đào rung nhẹ (trang trí) -->
+      <div class="trees" aria-hidden="true">
+        <div class="tree tree-mai">
+          <div class="tree-img"></div>
+          <div class="tree-label">Mai</div>
+        </div>
+        <div class="tree tree-dao">
+          <div class="tree-img"></div>
+          <div class="tree-label">Đào</div>
+        </div>
+      </div>
+
+      <!-- Thanh điều hướng nhanh -->
+      <nav class="header-nav" aria-label="Điều hướng nhanh">
+        <a href="#gioi-thieu">Giới thiệu</a>
+        <a href="#bai-viet">Bài viết & Ảnh</a>
+        <a href="#media">Video & Nhạc</a>
+        <a href="#binh-luan">Bình luận</a>
+        <a href="#chan-trang">Chân trang</a>
+      </nav>
+    </div>
+
+    <div class="header-wave" aria-hidden="true"></div>
+  </header>
+
+  <!-- 2) NỘI DUNG -->
+  <main class="container content" aria-label="Nội dung báo tường">
+    <!-- BÀI GIỚI THIỆU -->
+    <section id="gioi-thieu" class="section" aria-label="Bài giới thiệu">
+      <div class="section-head">
+        <h2 class="section-title">Bài giới thiệu</h2>
+        <p class="section-hint">Ngắn thôi — nhưng đủ để nghe mùi Tết.</p>
+      </div>
+
+      <div class="intro">
+        <div class="intro-card">
+<div class="intro-logo" aria-label="Logo Tết 2026">
+  <svg viewBox="0 0 980 300" role="img" aria-label="Logo Tết 2026 đỏ vàng">
+    <defs>
+      <linearGradient id="bgRed" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#b1001a"/>
+        <stop offset="0.5" stop-color="#e3002a"/>
+        <stop offset="1" stop-color="#ff2f2f"/>
+      </linearGradient>
+
+      <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#ffe39a"/>
+        <stop offset="0.45" stop-color="#ffcc2a"/>
+        <stop offset="1" stop-color="#ffb300"/>
+      </linearGradient>
+
+      <!-- hoa văn (pattern vàng mờ) -->
+      <pattern id="patternTet" width="80" height="80" patternUnits="userSpaceOnUse">
+        <path d="M0 40 C20 20 60 20 80 40 C60 60 20 60 0 40Z"
+              fill="none" stroke="rgba(255,204,42,.22)" stroke-width="3"/>
+        <circle cx="40" cy="40" r="6" fill="rgba(255,204,42,.18)"/>
+      </pattern>
+
+      <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+        <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="rgba(40,10,0,.35)"/>
+      </filter>
+
+      <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+        <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="rgba(0,0,0,.20)"/>
+      </filter>
+    </defs>
+
+    <!-- nền -->
+    <rect x="14" y="14" width="952" height="272" rx="34" fill="url(#bgRed)"/>
+    <rect x="14" y="14" width="952" height="272" rx="34" fill="url(#patternTet)" opacity="1"/>
+    <!-- khung vàng -->
+    <rect x="14" y="14" width="952" height="272" rx="34" fill="none" stroke="url(#gold)" stroke-width="7"/>
+
+    <!-- pháo hoa (góc trái) -->
+    <g transform="translate(110 70)" opacity=".9" filter="url(#soft)">
+      <path d="M0 0 L0 -28" stroke="rgba(255,204,42,.85)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M0 0 L22 -20" stroke="rgba(255,204,42,.75)" stroke-width="3" stroke-linecap="round"/>
+      <path d="M0 0 L28 0" stroke="rgba(255,204,42,.65)" stroke-width="3" stroke-linecap="round"/>
+      <path d="M0 0 L20 22" stroke="rgba(255,204,42,.75)" stroke-width="3" stroke-linecap="round"/>
+      <path d="M0 0 L0 30" stroke="rgba(255,204,42,.85)" stroke-width="4" stroke-linecap="round"/>
+      <circle r="7" fill="url(#gold)"/>
+    </g>
+
+    <!-- lồng đèn (góc phải) -->
+    <g transform="translate(860 62)" filter="url(#soft)">
+      <path d="M0 -26 C0 -40 36 -40 36 -26 L36 20 C36 40 0 40 0 20Z"
+            fill="rgba(255,204,42,.92)" stroke="rgba(255,255,255,.25)" stroke-width="2"/>
+      <path d="M18 -44 L18 -26" stroke="rgba(255,204,42,.92)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M18 40 L18 62" stroke="rgba(255,204,42,.92)" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="18" cy="66" r="5" fill="rgba(255,204,42,.92)"/>
+    </g>
+
+    <!-- cụm hoa mai (trái) -->
+    <g transform="translate(150 205)" filter="url(#shadow)">
+      <g transform="translate(0 0)">
+        <circle r="10" fill="url(#gold)"/>
+        <g fill="#fffdf0">
+          <circle cx="0" cy="-30" r="18"/><circle cx="25" cy="-10" r="18"/>
+          <circle cx="16" cy="20" r="18"/><circle cx="-16" cy="20" r="18"/>
+          <circle cx="-25" cy="-10" r="18"/>
+        </g>
+        <circle r="8" fill="url(#gold)"/>
+      </g>
+      <g transform="translate(56 10) scale(.85)">
+        <circle r="10" fill="url(#gold)"/>
+        <g fill="#fffdf0">
+          <circle cx="0" cy="-30" r="18"/><circle cx="25" cy="-10" r="18"/>
+          <circle cx="16" cy="20" r="18"/><circle cx="-16" cy="20" r="18"/>
+          <circle cx="-25" cy="-10" r="18"/>
+        </g>
+        <circle r="8" fill="url(#gold)"/>
+      </g>
+    </g>
+
+    <!-- cụm hoa đào (phải) -->
+    <g transform="translate(820 210)" filter="url(#shadow)">
+      <g transform="translate(0 0)">
+        <circle r="10" fill="#ff76b6"/>
+        <g fill="#ffd2e8">
+          <circle cx="0" cy="-30" r="18"/><circle cx="25" cy="-10" r="18"/>
+          <circle cx="16" cy="20" r="18"/><circle cx="-16" cy="20" r="18"/>
+          <circle cx="-25" cy="-10" r="18"/>
+        </g>
+        <circle r="8" fill="#ff76b6"/>
+      </g>
+      <g transform="translate(-58 8) scale(.85)">
+        <circle r="10" fill="#ff76b6"/>
+        <g fill="#ffd2e8">
+          <circle cx="0" cy="-30" r="18"/><circle cx="25" cy="-10" r="18"/>
+          <circle cx="16" cy="20" r="18"/><circle cx="-16" cy="20" r="18"/>
+          <circle cx="-25" cy="-10" r="18"/>
+        </g>
+        <circle r="8" fill="#ff76b6"/>
+      </g>
+    </g>
+
+    <!-- chữ chính -->
+    <g filter="url(#shadow)">
+      <text x="490" y="140" text-anchor="middle"
+            style="font: 900 86px 'Be Vietnam Pro', system-ui; letter-spacing:4px; fill: url(#gold);">
+        TẾT 2026
+      </text>
+      <text x="490" y="190" text-anchor="middle"
+            style="font: 700 22px 'Be Vietnam Pro', system-ui; fill: rgba(255,255,255,.92); letter-spacing:2px;">
+        AN KHANG • THỊNH VƯỢNG
+      </text>
+    </g>
+
+    <!-- dấu 5PK -->
+    <g transform="translate(490 238)" filter="url(#soft)">
+      <rect x="-90" y="-20" width="180" height="44" rx="22"
+            fill="rgba(0,0,0,.18)" stroke="rgba(255,255,255,.20)"/>
+      <text x="0" y="10" text-anchor="middle"
+            style="font: 800 18px 'Be Vietnam Pro', system-ui; fill: rgba(255,255,255,.95); letter-spacing:2px;">
+        NHÓM 5PK
+      </text>
+    </g>
+  </svg>
+</div>
+
+
+          <div class="intro-text">
+  <p>
+    Mùa xuân ở Việt Nam không chỉ là đổi gió. Xuân là lúc nhà có thêm tiếng cười,
+    bếp có thêm hơi ấm, và tim có thêm một lời hẹn: <em>trở về</em>.
+  </p>
+
+  <p>
+    Khi Tết đến, mọi thứ như được “làm mới”: góc sân quét sạch, bàn thờ thơm mùi nhang,
+    gian bếp rộn tiếng nước sôi, và trong mắt người lớn có một niềm vui rất lặng —
+    vui vì con cháu đã về, vì nhà lại đủ đầy.
+  </p>
+
+  <p>
+    Tết cũng là mùa của những điều nhỏ mà đáng quý: một lời chúc đúng lúc,
+    một cái bắt tay thật chặt, một bữa cơm đông người, một phong bao đỏ
+    không đo bằng số — đo bằng tình.
+  </p>
+</div>
+
+
+
+          <div class="intro-quote">
+            <p>“Tết đẹp nhất khi ta còn có nơi để về, còn có người để thương.”</p>
+            <span>— Gợi ý câu chữ báo tường</span>
+          </div>
+        </div>
+
+        <aside class="spring-side" aria-label="Góc thú vị">
+  <div class="lixi-card" id="lixiCard">
+    <div class="lixi-top">
+      <span class="lixi-badge">GÓC LÌ XÌ</span>
+      <button type="button" class="lixi-btn" id="lixiBtn">Bốc lì xì</button>
+    </div>
+
+    <div class="lixi-envelope" aria-hidden="true">
+      <div class="lixi-flap"></div>
+      <div class="lixi-body"></div>
+    </div>
+
+    <p class="lixi-wish" id="lixiWish">Bấm “Bốc lì xì” để nhận 1 câu chúc + 2 câu thơ.</p>
+
+    <div class="lixi-meta">
+      <span>🧧 Chúc năm mới</span>
+      <span>🌸 5PK</span>
+    </div>
+  </div>
+
+  <div class="mini-panel">
+    <div class="mini-title">Sắc Tết nhanh</div>
+    <ul class="mini-list">
+      <li><strong>Đỏ</strong> — may mắn, sum vầy</li>
+      <li><strong>Vàng</strong> — thịnh vượng</li>
+      <li><strong>Mai/Đào</strong> — báo xuân</li>
+    </ul>
+  </div>
+
+  <div class="mini-panel">
+    <div class="mini-title">Một điều tử tế 2026</div>
+    <p class="mini-text">Hẹn nhau: nói lời dịu dàng hơn, về nhà đúng hẹn, giữ một điều tốt mỗi ngày.</p>
+  </div>
+</aside>
+
+    </section>
+
+    <!-- CÁC BÀI VIẾT (gộp với GÓC ẢNH: mỗi bài đi kèm 1 ảnh) -->
+    <section id="bai-viet" class="section" aria-label="Các bài viết kèm ảnh">
+      <div class="section-head">
+        <h2 class="section-title">Các bài viết & Góc ảnh</h2>
+        <p class="section-hint">Mỗi bài là một bức ảnh — mỗi bức ảnh là một ký ức.</p>
+      </div>
+
+      <div class="story-grid">
+        <!-- 1 -->
+        <article class="story">
+          <div class="story-media" role="img" aria-label="Hoa mai vàng ngày xuân"></div>
+          <div class="story-body">
+            <div class="story-tag">Tết Nguyên Đán</div>
+            <h3>1) Trước Tết: dọn nhà — dọn lòng</h3>
+            <p>
+              Lau một góc bếp, gấp lại một năm. Tết bắt đầu từ những điều nhỏ:
+              sạch sẽ, gọn gàng, và sẵn sàng mỉm cười với nhau.
+            </p>
+            <div class="story-line">
+              <span class="dot"></span>
+              <span>“Dọn nhà để đón Tết — dọn lòng để đón bình an.”</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="story story-right">
+          <div class="story-media s2" role="img" aria-label="Chợ Tết rộn ràng"></div>
+          <div class="story-body">
+            <div class="story-tag">Không khí Tết</div>
+            <h3>2) Chợ Tết: nơi màu sắc biết nói</h3>
+            <p>
+              Vàng của mai, đỏ của bao lì xì, xanh của lá dong…
+              Đi giữa chợ Tết, tự nhiên thấy mình “thuộc về” một điều ấm áp.
+            </p>
+            <div class="story-line">
+              <span class="dot"></span>
+              <span>“Chợ Tết đông — mà lòng người lại ấm.”</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="story">
+          <div class="story-media s3" role="img" aria-label="Giao thừa và ánh đèn"></div>
+          <div class="story-body">
+            <div class="story-tag">Giao thừa</div>
+            <h3>3) Giao thừa: khoảnh khắc rất mỏng</h3>
+            <p>
+              Phút chuyển năm không dài — nhưng đủ để ta hiểu:
+              điều quý nhất không phải rực rỡ, mà là người vẫn ngồi cạnh mình.
+            </p>
+            <blockquote class="mini-poem">
+              Đêm giao thừa mỏng như tờ giấy<br/>
+              Viết lên đó: bình an, đủ đầy
+            </blockquote>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="story story-right">
+          <div class="story-media s4" role="img" aria-label="Lời chúc đầu năm và lì xì"></div>
+          <div class="story-body">
+            <div class="story-tag">Mùng Một</div>
+            <h3>4) Sáng mùng Một: lời chúc mở cửa trời</h3>
+            <p>
+              Một câu chúc đúng lúc có thể làm cả năm dịu lại.
+              Lì xì đỏ — không đo bằng số, đo bằng điều tốt mình trao nhau.
+            </p>
+            <blockquote class="mini-poem">
+              Lì xì đỏ — không đo bằng số<br/>
+              Đo bằng điều tốt mình trao nhau
+            </blockquote>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="story">
+          <div class="story-media s5" role="img" aria-label="Bánh Tết và mâm cơm ngày xuân"></div>
+          <div class="story-body">
+            <div class="story-tag">Hương vị Tết</div>
+            <h3>5) Tết có vị của quê</h3>
+            <p>
+              Bánh chưng/bánh tét, mứt gừng, dưa hành… Mỗi món là một câu chuyện.
+              Ăn một miếng, nhớ một người. Nhớ xong, lòng tự nhiên hiền.
+            </p>
+            <div class="story-line">
+              <span class="dot"></span>
+              <span>“Tết về — nhà bỗng thơm hơn, vì yêu thương trở về.”</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6: lễ hội thế giới ít thôi -->
+        <article class="story story-right">
+          <div class="story-media s6" role="img" aria-label="Hoa xuân và khoảnh khắc yên bình"></div>
+          <div class="story-body">
+            <div class="story-tag">Góc thế giới (điểm qua)</div>
+            <h3>6) Xuân ở đâu cũng là bắt đầu</h3>
+            <p>
+              Nhật có Hanami ngắm hoa, Ấn có Holi rực sắc màu, Ba Tư có Nowruz làm mới nhà cửa.
+              Còn mình — chỉ cần một cái ôm, là đủ thấy xuân.
+            </p>
+            <div class="story-line">
+              <span class="dot"></span>
+              <span>“Xuân không cần nói nhiều. Hoa nở, người cười — thế là xuân.”</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Góc thơ ngắn (kèm 1 câu dân gian quen thuộc) -->
+      <div class="poem-strip" aria-label="Góc thơ Tết">
+        <div class="poem-chip">
+          <div class="poem-label">Câu quen thuộc</div>
+          <div class="poem-text">
+            Thịt mỡ dưa hành câu đối đỏ — Cây nêu tràng pháo bánh chưng xanh
+          </div>
+        </div>
+        <div class="poem-chip">
+          <div class="poem-label">Tự sáng tác</div>
+          <div class="poem-text">
+            Mai vàng chạm nắng ngoài hiên — Một câu “năm mới” dịu miền gió sương
+          </div>
+        </div>
+        <div class="poem-chip">
+          <div class="poem-label">Tự sáng tác</div>
+          <div class="poem-text">
+            Tết là bếp lửa chưa tàn — Là người trở về, là lòng mình lắng
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- ===== MINI GAME TÀI / XỈU ===== -->
+<section id="mini-game" class="section" aria-label="Mini game Tài Xỉu">
+  <div class="section-head">
+    <h2 class="section-title">Mini game: Tài / Xỉu (3 xúc xắc)</h2>
+    <p class="section-hint">Chơi vui giải trí • Điểm không liên quan tiền thật.</p>
+  </div>
+
+  <div class="tx-wrap">
+    <div class="tx-grid">
+      <!-- LEFT -->
+      <div class="tx-card">
+        <div class="tx-row tx-top">
+          <div class="tx-pill"><span class="tx-label">Số dư (điểm):</span> <b id="tx-balance">1000</b></div>
+          <div class="tx-pill"><span class="tx-label">Tổng:</span> <b id="tx-sum">-</b></div>
+          <div class="tx-pill"><span class="tx-label">Kết quả:</span> <b id="tx-result">-</b></div>
+        </div>
+
+        <div class="tx-sep"></div>
+
+        <div class="tx-row tx-choice">
+          <span class="tx-label">Chọn cửa:</span>
+          <button type="button" id="tx-btnTai" data-choice="TAI" class="tx-btn active">TÀI (11–17)</button>
+          <button type="button" id="tx-btnXiu" data-choice="XIU" class="tx-btn">XỈU (4–10)</button>
+          <span class="tx-pill tx-muted">Bộ ba (111…666): <b>Nhà cái thắng</b></span>
+        </div>
+
+        <div class="tx-row" style="margin-top:10px;">
+          <label class="tx-label" for="tx-bet">Cược (điểm):</label>
+          <input id="tx-bet" type="number" min="1" step="1" value="50" />
+          <button type="button" id="tx-roll" class="tx-btn2">Lắc</button>
+          <button type="button" id="tx-reset" class="tx-btn3">Reset</button>
+
+          <label class="tx-switch tx-pill">
+            <input id="tx-tripleRule" type="checkbox" checked />
+            <span class="tx-label" style="cursor:pointer;">Luật bộ ba: Nhà cái thắng</span>
+          </label>
+        </div>
+
+          <div class="tx-dice" aria-label="Xúc xắc">
+  <div class="tx-die" id="tx-d1">?</div>
+  <div class="tx-die" id="tx-d2">?</div>
+  <div class="tx-die" id="tx-d3">?</div>
+
+</div>
+
+        <div class="tx-status">
+          <div id="tx-message" class="tx-big tx-muted">Chọn cửa, nhập cược, rồi bấm “Lắc”.</div>
+          <div class="tx-footnote">Mẹo: Reset sẽ đưa điểm và lịch sử về mặc định.</div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="tx-card">
+        <div class="tx-row tx-top" style="justify-content:space-between;">
+          <div class="tx-big">📜 Lịch sử</div>
+          <div class="tx-pill"><span class="tx-label">Tối đa:</span> <b>20</b></div>
+        </div>
+
+        <div class="tx-history" id="tx-history"></div>
+
+        <div class="tx-sep"></div>
+
+        <div class="tx-footnote">
+          Luật:
+          <ul class="tx-ul">
+            <li>Tài: tổng 11–17</li>
+            <li>Xỉu: tổng 4–10</li>
+            <li>Nếu là bộ ba và bật luật bộ ba: nhà cái thắng (người chơi thua)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- GÓC VIDEO, NHẠC (placeholder: bạn thêm file sau) -->
+   <section id="media" class="section" aria-label="Góc video và nhạc">
+  <div class="section-head">
+    <h2 class="section-title">Góc video, nhạc</h2>
+  </div>
+
+  <div class="media-stage">
+    <!-- VIDEO (center) -->
+    <div class="video-center">
+      <h3>Video mùa xuân</h3>
+
+      <div class="video-shell" id="videoShell" aria-label="Khung video theo tỉ lệ gốc">
+        <video id="springVideo" class="spring-video" controls preload="metadata">
+          <source src="VIDEO.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <!-- AUDIO (corner mini) -->
+    <aside class="audio-mini" aria-label="Nhạc góc nhỏ">
+      <div class="audio-mini-title">Nhạc</div>
+      <audio class="spring-audio" controls preload="metadata">
+        <source src="tet.m4a" type="audio/mp4">
+      </audio>
+    </aside>
+  </div>
+</section>
+
+
+
+    <!-- GÓC BÌNH LUẬN -->
+    <section id="binh-luan" class="section" aria-label="Góc bình luận">
+      <div class="section-head">
+        <h2 class="section-title">Góc bình luận</h2>
+        <p class="section-hint">Viết một câu ngắn — để Tết ở lại lâu hơn.</p>
+      </div>
+
+      <div class="comment-wrap">
+        <div class="comment-list" id="commentList" aria-label="Danh sách bình luận">
+          <div class="comment">
+            <div class="comment-meta">
+              <strong>Khách</strong> <span>•</span> <time datetime="2026-01-18">18/01/2026</time>
+            </div>
+            <div class="comment-body">Trang vàng rực như nắng Tết, đọc xong thấy muốn về nhà ngay.</div>
+          </div>
+        </div>
+
+        <form class="comment-form" id="commentForm" aria-label="Gửi bình luận">
+          <label>
+            Tên của bạn
+            <input type="text" id="cName" placeholder="Nhập tên..." maxlength="40" required />
+          </label>
+          <label>
+            Bình luận
+            <textarea id="cText" placeholder="Viết một câu ngắn..." maxlength="240" required></textarea>
+          </label>
+          <button type="submit" class="btn">Gửi bình luận</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- 3) CHÂN TRANG WEB -->
+  <footer id="chan-trang" class="footer" aria-label="Chân trang web">
+  <div class="footer-bottom">
+    <div class="container footer-all">
+
+      <!-- 2 cột: Email thành viên + Thông tin cập nhật & nguồn -->
+      <div class="footer-grid">
+        <div class="footer-block">
+          <h2>Nhóm thực hiện: <span class="accent">5PK</span> (6 thành viên)</h2>
+
+          <div class="team-table" role="table" aria-label="Danh sách thành viên và email">
+            <div class="row head" role="row">
+              <div role="columnheader">Họ và tên</div>
+              <div role="columnheader">Email</div>
+            </div>
+
+            <div class="team-table" role="table" aria-label="Danh sách thành viên và email">
+  <div class="row head" role="row">
+    <div role="columnheader">Họ và tên</div>
+    <div role="columnheader">Email</div>
+  </div>
+
+  <div class="row" role="row">
+    <div role="cell">Đào Minh Phúc</div>
+    <div role="cell">
+      <a class="mailto" href="mailto:daominhphuc51@gmail.com">daominhphuc51@gmail.com</a>
+    </div>
+  </div>
+
+  <div class="row" role="row">
+    <div role="cell">Hồ Anh Kiệt</div>
+    <div role="cell">
+      <a class="mailto" href="mailto:hoanhkiet101008@gmail.com">hoanhkiet101008@gmail.com</a>
+    </div>
+  </div>
+
+  <div class="row" role="row">
+    <div role="cell">Phạm Tùng Lâm</div>
+    <div role="cell">
+      <a class="mailto" href="mailto:tunglampham0101@gmail.com">tunglampham0101@gmail.com</a>
+    </div>
+  </div>
+
+  <div class="row" role="row">
+    <div role="cell">Phạm Quang Huy</div>
+    <div role="cell">
+      <a class="mailto" href="mailto:quanghuyhpvt2008@gmail.com">quanghuyhpvt2008@gmail.com</a>
+    </div>
+  </div>
+
+  <div class="row" role="row">
+    <div role="cell">Phạm Thanh Hải</div>
+    <div role="cell">
+      <a class="mailto" href="mailto:phamthanhhaitpvt@gmail.com">phamthanhhaitpvt@gmail.com</a>
+    </div>
+  </div>
+
+  <div class="row" role="row">
+    <div role="cell">Phạm Anh Hưng</div>
+    <div role="cell">
+      <a class="mailto" href="mailto:hungpham211208@gmail.com">hungpham211208@gmail.com</a>
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+
+        <div class="footer-block">
+          <h2>Thông tin cập nhật & nguồn tham khảo</h2>
+
+          <div class="footer-meta">
+            <div class="meta-item">
+              <span class="k">Cập nhật nội dung gần nhất</span>
+              <span class="v"><time datetime="2026-01-18">18/01/2026</time></span>
+            </div>
+
+            <div class="meta-item">
+              <span class="k">Nguồn tham khảo</span>
+            </div>
+          </div>
+
+          <ul class="sources">
+            <li>
+              <a href="https://vi.wikipedia.org/wiki/T%E1%BA%BFt_Nguy%C3%AAn_%C4%90%C3%A1n" target="_blank" rel="noreferrer noopener">
+                Wikipedia (Tết Nguyên Đán)
+              </a>
+            </li>
+            <li>
+              <a href="https://unsplash.com/" target="_blank" rel="noreferrer noopener">
+                Unsplash (ảnh minh hoạ)
+              </a>
+            </li>
+            <li>
+              <a href="https://www.openai.com/" target="_blank" rel="noreferrer noopener">
+                ChatGPT (hỗ trợ ý tưởng, biên tập câu chữ)
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="return false;">
+                Nguồn video handmade của nhóm học sinh 12 Toán 1
+              </a>
+            </li>
+            <li>
+              <a href="https://youtu.be/Thf6-faRGI4?si=3RCVhREKFRYTMOzR" target="_blank" rel="noreferrer noopener">
+                Youtube (audio nhạc)
+              </a>
+            </li>
+          </ul>
+
+          <a class="backtop" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑ Về đầu trang</a>
+        </div>
+      </div>
+
+      <!-- Dòng © giữ nguyên ở dưới cùng -->
+      <div class="bottom-inner">
+        <span>© 2026 • 5PK</span>
+        <span class="sep">•</span>
+        <span>Thiết kế báo tường số — tông vàng Tết Việt</span>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+  <script>
+  // ========= Hoa mai/hoa đào rơi ngẫu nhiên (rơi thẳng, hoa to ~100px) =========
+  (function () {
+    const layer = document.getElementById('petal-layer');
+
+    // Nếu máy bạn bật "Reduce motion" thì JS sẽ không chạy → tạm bỏ kiểm tra này cho chắc
+    // const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    // if (!layer || reduceMotion) return;
+
+    if (!layer) return;
+
+    const MAX = 28;
+    const TYPES = ['mai', 'dao'];
+
+    function rand(min, max){ return Math.random() * (max - min) + min; }
+
+    function spawn() {
+      if (layer.childElementCount > MAX) {
+        for (let i = 0; i < 6 && layer.firstChild; i++) layer.removeChild(layer.firstChild);
+      }
+
+      const el = document.createElement('div');
+      const type = TYPES[Math.floor(Math.random() * TYPES.length)];
+      el.className = 'flower ' + type;
+
+      // Hoa to ~100px
+      const size = rand(40, 50);
+
+      // Rơi thẳng: chỉ random vị trí ban đầu
+      const left = rand(-3, 103);
+
+      const dur = rand(7.5, 12.5);
+      const spin = rand(-90, 90); // xoay nhẹ
+      const delay = rand(0, 0.8);
+
+      el.style.setProperty('--size', size + 'px');
+      el.style.setProperty('--left', left + 'vw');
+      el.style.setProperty('--dur', dur + 's');
+      el.style.setProperty('--spin', spin + 'deg');
+      el.style.setProperty('--delay', delay + 's');
+
+      layer.appendChild(el);
+
+      setTimeout(() => {
+        if (el && el.parentNode) el.parentNode.removeChild(el);
+      }, (dur + delay) * 1000 + 300);
+    }
+
+    // tạo hoa ban đầu
+    for (let i = 0; i < 10; i++) spawn();
+
+    // nhịp rơi
+    setInterval(spawn, 450);
+  })();
+  // ========= Bốc lì xì (random + lưu) =========
+(function(){
+  const KEY = "lixi_5pk_2026";
+  const btn = document.getElementById("lixiBtn");
+  const wishEl = document.getElementById("lixiWish");
+  const card = document.getElementById("lixiCard");
+  if (!btn || !wishEl || !card) return;
+
+  const wishes = [
+    "Chúc nhà nhà đủ đầy, lòng lòng an yên.\nMai vàng chạm nắng hiên — bình an ghé lại.\nĐào hồng nghiêng gió sớm — hạnh phúc theo về.",
+    "Năm mới: sức khỏe dày như bánh chưng, niềm vui xanh như lá.\nTết về trong mắt người thương — ấm hơn mọi câu chúc.\nXuân sang trong bếp lửa — thơm cả một năm dài.",
+    "Chúc bạn cười nhiều, ngủ ngon, học giỏi.\nLì xì đỏ không đo bằng số — đo bằng điều tốt.\nMùa xuân không cần nói nhiều — hoa nở là đủ.",
+    "Chúc 2026: đi chậm mà chắc, làm ít mà hay.\nMột lời dịu dàng đầu năm — cả năm bớt chông chênh.\nMột cái ôm đúng lúc — đủ thành mùa xuân."
+  ];
+
+  // nạp lì xì đã lưu (nếu có)
+  try{
+    const saved = localStorage.getItem(KEY);
+    if (saved) { wishEl.textContent = saved; card.classList.add("open"); }
+  }catch(e){}
+
+  btn.addEventListener("click", () => {
+    const pick = wishes[Math.floor(Math.random() * wishes.length)];
+    wishEl.textContent = pick;
+    card.classList.add("open");
+    try{ localStorage.setItem(KEY, pick); }catch(e){}
+  });
+})();
+// ===== MINI GAME TÀI / XỈU (3 xúc xắc) =====
+(function () {
+  // DOM
+  const elBalance = document.getElementById("tx-balance");
+  const elSum = document.getElementById("tx-sum");
+  const elResult = document.getElementById("tx-result");
+  const elMsg = document.getElementById("tx-message");
+  const elBet = document.getElementById("tx-bet");
+  const elHistory = document.getElementById("tx-history");
+  const elD1 = document.getElementById("tx-d1");
+  const elD2 = document.getElementById("tx-d2");
+const elD3 = document.getElementById("tx-d3");
+  const tripleRule = document.getElementById("tx-tripleRule");
+
+  const btnTai = document.getElementById("tx-btnTai");
+  const btnXiu = document.getElementById("tx-btnXiu");
+  const btnRoll = document.getElementById("tx-roll");
+  const btnReset = document.getElementById("tx-reset");
+
+  // nếu chưa add HTML section thì thoát
+  if (!elBalance || !btnRoll) return;
+
+  // State
+  let balance = 1000;
+  let choice = "TAI";
+  const maxHistory = 20;
+
+  // Helpers
+  function setChoice(c) {
+    choice = c;
+    btnTai.classList.toggle("active", c === "TAI");
+    btnXiu.classList.toggle("active", c === "XIU");
+  }
+
+  function clampInt(v, min, max) {
+    const n = Math.floor(Number(v));
+    if (!Number.isFinite(n)) return min;
+    return Math.max(min, Math.min(max, n));
+  }
+
+  function rollDie() { return Math.floor(Math.random() * 6) + 1; }
+
+  function isTriple(a, b, c) { return a === b && b === c; }
+
+  // Luật: bộ ba (nếu bật) -> HOUSE thắng
+  function classify(a, b, c) {
+    const sum = a + b + c;
+
+    if (tripleRule.checked && isTriple(a, b, c)) {
+      return { sum, label: "BỘ BA", side: "HOUSE" };
+    }
+    if (sum >= 11 && sum <= 17) return { sum, label: "TÀI", side: "TAI" };
+    if (sum >= 4 && sum <= 10) return { sum, label: "XỈU", side: "XIU" };
+
+    // nếu tắt luật bộ ba: 3 coi như Xỉu, 18 coi như Tài
+    if (sum === 3) return { sum, label: "XỈU (3)", side: "XIU" };
+    if (sum === 18) return { sum, label: "TÀI (18)", side: "TAI" };
+
+    return { sum, label: "KHÁC", side: "HOUSE" };
+  }
+
+  function fmtTime(d = new Date()) {
+    return d.toLocaleTimeString("vi-VN", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+  }
+
+  function pushHistory(html) {
+    const div = document.createElement("div");
+    div.className = "tx-item";
+    div.innerHTML = html;
+    elHistory.prepend(div);
+    while (elHistory.children.length > maxHistory) {
+      elHistory.removeChild(elHistory.lastChild);
+    }
+  }
+
+  function render() {
+    elBalance.textContent = balance;
+  }
+
+  function setMsg(text, kind) {
+    elMsg.textContent = text;
+    elMsg.className = "tx-big " + (kind || "tx-muted");
+  }
+
+  // Events
+  btnTai.addEventListener("click", () => setChoice("TAI"));
+  btnXiu.addEventListener("click", () => setChoice("XIU"));
+
+  btnRoll.addEventListener("click", () => {
+
+    const bet = clampInt(elBet.value, 1, 1_000_000);
+
+    if (bet > balance) {
+      setMsg("Bạn không đủ điểm để cược mức này.", "tx-warn");
+      return;
+    }
+
+    const a = rollDie(), b = rollDie(), c = rollDie();
+    elD1.textContent = a; elD2.textContent = b; elD3.textContent = c;
+
+    const res = classify(a, b, c);
+    elSum.textContent = res.sum;
+    elResult.textContent = res.label;
+
+    let win = false;
+    let reason = "";
+
+    if (res.side === "HOUSE") {
+      balance -= bet;
+      win = false;
+      reason = "Nhà cái thắng (bộ ba)";
+    } else if (res.side === choice) {
+      balance += bet;
+      win = true;
+      reason = "Bạn đoán đúng";
+    } else {
+      balance -= bet;
+      win = false;
+      reason = "Bạn đoán sai";
+    }
+
+    render();
+
+    const cls = win ? "tx-ok" : "tx-bad";
+    setMsg(win ? `Bạn thắng +${bet} điểm!` : `Bạn thua -${bet} điểm!`, cls);
+
+    pushHistory(
+      `<b>${fmtTime()}</b> • Xúc xắc: <b>${a}-${b}-${c}</b> • Tổng: <b>${res.sum}</b> → <b>${res.label}</b><br/>
+       Bạn chọn: <b>${choice === "TAI" ? "TÀI" : "XỈU"}</b> • <span class="${cls}"><b>${win ? "THẮNG" : "THUA"}</b></span> • <span class="tx-muted">${reason}</span>`
+    );
+  });
+
+  btnReset.addEventListener("click", () => {
+    balance = 1000;
+    setChoice("TAI");
+    elBet.value = 50;
+    elD1.textContent = "?"; elD2.textContent = "?"; elD3.textContent = "?";
+    elSum.textContent = "-";
+    elResult.textContent = "-";
+    elHistory.innerHTML = "";
+    setMsg("Đã reset. Chọn cửa, nhập cược, rồi bấm “Lắc”.", "tx-muted");
+    render();
+  });
+
+  // init
+  setChoice("TAI");
+  render();
+})();
+
+
+  (function(){
+    const v = document.getElementById("springVideo");
+    const shell = document.getElementById("videoShell");
+    if(!v || !shell) return;
+
+    v.addEventListener("loadedmetadata", () => {
+      const w = v.videoWidth || 16;
+      const h = v.videoHeight || 9;
+      shell.style.aspectRatio = `${w} / ${h}`;
+    });
+  })();
+
+  // ... code bạn đang có ...
+
+  // ===== BÌNH LUẬN: không reload + append vào danh sách =====
+  (function(){
+    const form = document.getElementById("commentForm");
+    const list = document.getElementById("commentList");
+    const nameEl = document.getElementById("cName");
+    const textEl = document.getElementById("cText");
+    if(!form || !list || !nameEl || !textEl) return;
+
+    function pad2(n){ return String(n).padStart(2,"0"); }
+    function formatDateVN(d){
+      return `${pad2(d.getDate())}/${pad2(d.getMonth()+1)}/${d.getFullYear()}`;
+    }
+    function formatDateISO(d){
+      return `${d.getFullYear()}-${pad2(d.getMonth()+1)}-${pad2(d.getDate())}`;
+    }
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault(); // quan trọng: không reload trang
+
+      const name = nameEl.value.trim();
+      const text = textEl.value.trim();
+      if(!name || !text) return;
+
+      const now = new Date();
+      const iso = formatDateISO(now);
+      const vn = formatDateVN(now);
+
+      // Tạo comment mới (dùng textContent để tránh dính HTML)
+      const wrap = document.createElement("div");
+      wrap.className = "comment";
+
+      const meta = document.createElement("div");
+      meta.className = "comment-meta";
+
+      const strong = document.createElement("strong");
+      strong.textContent = name;
+
+      const dot = document.createElement("span");
+      dot.textContent = "•";
+
+      const time = document.createElement("time");
+      time.setAttribute("datetime", iso);
+      time.textContent = vn;
+
+      meta.appendChild(strong);
+      meta.appendChild(dot);
+      meta.appendChild(time);
+
+      const body = document.createElement("div");
+      body.className = "comment-body";
+      body.textContent = text;
+
+      wrap.appendChild(meta);
+      wrap.appendChild(body);
+
+      // Cho comment mới lên đầu danh sách
+      list.prepend(wrap);
+
+      // Reset form
+      form.reset();
+      nameEl.focus();
+    });
+  })();
+
+
+
+
+</script>
+
+
+</body>
+</html>
